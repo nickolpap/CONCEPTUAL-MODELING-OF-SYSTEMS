@@ -1,0 +1,47 @@
+BEGINTRANSACTION
+
+TELL Individual Object in S_Class
+end Object
+
+TELL Individual KodikosArithmos in S_Class
+end KodikosArithmos
+
+TELL Individual Engine in S_Class isA Object
+with attribute
+	aithmosEngine : KodikosArithmos;
+end Engine
+
+TELL Individual Car in S_Class isA Object
+with attribute
+	exeimeros:Engine;
+	aritmosplaisiou:KodikosArithmos;
+end Car
+
+TELL Individual Person in S_Class
+with attribute
+	katexei:Car;
+	arithmostautotitas : KodikosArithmos;
+end Person
+
+TELL Individual Date in S_Class
+end Date
+TELL Attribute katexei
+	from:Person
+	to:Car
+in S_Class
+with attribute
+	hmerominiAgoras:Date
+end katexei
+
+TELL Individual Axia in S_Class
+end Axia
+
+TELL Individual Polisi in S_Class
+with attribute 
+	poloumenoeidos:Car;
+	politi:Person;
+	timi:Axia;
+end Polisi
+
+
+ENDTRANSACTION

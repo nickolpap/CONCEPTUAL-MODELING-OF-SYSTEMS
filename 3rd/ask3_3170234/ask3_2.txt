@@ -1,0 +1,33 @@
+BEGINTRANSACTION
+
+TELL Individual Prosopo in S_Class
+end Prosopo
+
+TELL Individual Proion in S_Class
+end Proion
+
+TELL Individual Hmerominia in S_Class
+end Hmerominia
+
+TELL Individual Praxi in S_Class
+with attribute
+	hmerominia:Hmerominia
+	ekteleitaiApo:Prosopo;
+	ekteleitaiGia:Proion;
+end Praxi
+
+TELL Individual Agora in S_Class isA Praxi
+with attribute
+	agorastis:Prosopo;
+	politis:Prosopo;
+	poloumenoProioin:Proion;
+end Agora
+
+TELL Individual Paragwgi in S_Class isA Praxi
+with attribute
+	paragwgos:Prosopo;
+	pelatis:Prosopo;
+	paragwmenoProioin:Proion;
+end Paragwgi
+
+ENDTRANSACTION

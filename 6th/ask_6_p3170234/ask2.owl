@@ -1,0 +1,190 @@
+@prefix : <http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/nicko/ontologies/2022/4/ask2> .
+
+<http://www.semanticweb.org/nicko/ontologies/2022/4/ask2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#exeiAderfi
+:exeiAderfi rdf:type owl:ObjectProperty ;
+            rdfs:domain :Prosopo ;
+            rdfs:range :Prosopo ;
+            owl:propertyDisjointWith :exeiSizigo .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#exeiMitera
+:exeiMitera rdf:type owl:ObjectProperty ;
+            rdfs:domain :Prosopo ;
+            rdfs:range :Prosopo ;
+            owl:propertyDisjointWith :exeiPaidi ,
+                                     :exeiPatera .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#exeiPaidi
+:exeiPaidi rdf:type owl:ObjectProperty ;
+           rdfs:domain :Prosopo ;
+           rdfs:range :Prosopo ;
+           owl:propertyDisjointWith :exeiPatera .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#exeiPatera
+:exeiPatera rdf:type owl:ObjectProperty ;
+            rdfs:domain :Prosopo ;
+            rdfs:range :Prosopo .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#exeiSizigo
+:exeiSizigo rdf:type owl:ObjectProperty ;
+            rdfs:domain :Prosopo ;
+            rdfs:range :Prosopo .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#Prosopo
+:Prosopo rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#EiriniPapageorgiou
+:EiriniPapageorgiou rdf:type owl:NamedIndividual ,
+                             :Prosopo ;
+                    :exeiAderfi :NikoletaPapageorgiou ,
+                                :PanagiotisPapageorgiou ;
+                    :exeiMitera :ErifiliXaralampeli ;
+                    :exeiPatera :GeorgiosPapageorgiou .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#EleniGeorgopoulou
+:EleniGeorgopoulou rdf:type owl:NamedIndividual ,
+                            :Prosopo .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#ErifiliXaralampeli
+:ErifiliXaralampeli rdf:type owl:NamedIndividual ,
+                             :Prosopo ;
+                    :exeiAderfi :GeorgiosXaralampelis ,
+                                :VasilikiXaralampeli ;
+                    :exeiMitera :KaterinaVasileiou ;
+                    :exeiPaidi :EiriniPapageorgiou ,
+                               :NikoletaPapageorgiou ,
+                               :PanagiotisPapageorgiou ;
+                    :exeiPatera :NikolaosXaralampeli ;
+                    :exeiSizigo :GeorgiosPapageorgiou .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#GeorgiosPapageorgiou
+:GeorgiosPapageorgiou rdf:type owl:NamedIndividual ,
+                               :Prosopo ;
+                      :exeiMitera :StavroulaNtousia ;
+                      :exeiPaidi :NikoletaPapageorgiou ,
+                                 :PanagiotisPapageorgiou ;
+                      :exeiPatera :PapageorgiouPanagiotis ;
+                      :exeiSizigo :ErifiliXaralampeli .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#GeorgiosXaralampelis
+:GeorgiosXaralampelis rdf:type owl:NamedIndividual ,
+                               :Prosopo ;
+                      :exeiAderfi :ErifiliXaralampeli ,
+                                  :VasilikiXaralampeli ;
+                      :exeiMitera :KaterinaVasileiou ;
+                      :exeiPaidi :NikosXaralampelis ;
+                      :exeiPatera :NikolaosXaralampeli ;
+                      :exeiSizigo :EleniGeorgopoulou .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#KaterinaSarri
+:KaterinaSarri rdf:type owl:NamedIndividual ,
+                        :Prosopo ;
+               :exeiMitera :VasilikiXaralampeli ;
+               :exeiPatera :XristosSarris .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#KaterinaVasileiou
+:KaterinaVasileiou rdf:type owl:NamedIndividual ,
+                            :Prosopo ;
+                   :exeiPaidi :ErifiliXaralampeli ,
+                              :GeorgiosXaralampelis ,
+                              :VasilikiXaralampeli ;
+                   :exeiSizigo :NikolaosXaralampeli .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#NikolaosXaralampeli
+:NikolaosXaralampeli rdf:type owl:NamedIndividual ,
+                              :Prosopo ;
+                     :exeiPaidi :ErifiliXaralampeli ,
+                                :GeorgiosXaralampelis ,
+                                :VasilikiXaralampeli ;
+                     :exeiSizigo :KaterinaVasileiou .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#NikoletaPapageorgiou
+:NikoletaPapageorgiou rdf:type owl:NamedIndividual ,
+                               :Prosopo ;
+                      :exeiAderfi :EiriniPapageorgiou ,
+                                  :PanagiotisPapageorgiou ;
+                      :exeiMitera :ErifiliXaralampeli ;
+                      :exeiPatera :GeorgiosPapageorgiou .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#NikosXaralampelis
+:NikosXaralampelis rdf:type owl:NamedIndividual ,
+                            :Prosopo ;
+                   :exeiMitera :EleniGeorgopoulou ;
+                   :exeiPatera :GeorgiosXaralampelis .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#PanagiotisPapageorgiou
+:PanagiotisPapageorgiou rdf:type owl:NamedIndividual ,
+                                 :Prosopo ;
+                        :exeiAderfi :EiriniPapageorgiou ,
+                                    :NikoletaPapageorgiou ;
+                        :exeiMitera :ErifiliXaralampeli ;
+                        :exeiPatera :GeorgiosPapageorgiou .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#PapageorgiouPanagiotis
+:PapageorgiouPanagiotis rdf:type owl:NamedIndividual ,
+                                 :Prosopo ;
+                        :exeiPaidi :GeorgiosPapageorgiou ;
+                        :exeiSizigo :StavroulaNtousia .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#StavroulaNtousia
+:StavroulaNtousia rdf:type owl:NamedIndividual ,
+                           :Prosopo ;
+                  :exeiPaidi :GeorgiosPapageorgiou ;
+                  :exeiSizigo :PapageorgiouPanagiotis .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#VasilikiXaralampeli
+:VasilikiXaralampeli rdf:type owl:NamedIndividual ,
+                              :Prosopo ;
+                     :exeiAderfi :GeorgiosXaralampelis ;
+                     :exeiMitera :KaterinaVasileiou ;
+                     :exeiPaidi :KaterinaSarri ;
+                     :exeiPatera :NikolaosXaralampeli ;
+                     :exeiSizigo :XristosSarris .
+
+
+###  http://www.semanticweb.org/nicko/ontologies/2022/4/ask2#XristosSarris
+:XristosSarris rdf:type owl:NamedIndividual ,
+                        :Prosopo ;
+               :exeiPaidi :KaterinaSarri ;
+               :exeiSizigo :VasilikiXaralampeli .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

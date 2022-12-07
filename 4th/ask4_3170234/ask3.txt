@@ -1,0 +1,22 @@
+BEGINTRANSACTION 
+
+TELL Individual Prosopo in S_Class
+with attribute
+	adelfi : Prosopo;
+	goniosTou : Prosopo;
+	miteraTou : Prosopo;
+	paterasTou : Prosopo;
+end Prosopo
+
+TELL Individual Andras in S_Class isA Prosopo
+end Andras
+
+TELL Individual Ginaika in S_Class isA Prosopo
+end Ginaika
+
+TELL Individual Gennisi in S_Class
+with attribute 
+	gennithikeTo : Prosopo;
+end Gennisi
+
+ENDTRANSACTION

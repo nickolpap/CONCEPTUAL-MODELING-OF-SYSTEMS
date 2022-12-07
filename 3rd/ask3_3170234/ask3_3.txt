@@ -1,0 +1,23 @@
+BEGINTRANSACTION
+
+TELL Individual TaxiOdotiton in S_Class
+end TaxiOdotiton
+
+TELL Individual O in Token, TaxiOdotiton
+with taxis
+	o1 : TaxiOdotiton1;
+	o2 : TaxiOdotiton2;
+	o3 : TaxiOdotiton3;
+end O
+
+TELL Individual TaxiOdotiton1 in Token, TaxiOdotiton
+end TaxiOdotiton1
+
+TELL Individual TaxiOdotiton2 in Token, TaxiOdotiton
+end TaxiOdotiton2
+
+TELL Individual TaxiOdotiton3 in Token, TaxiOdotiton
+end TaxiOdotiton3
+
+
+ENDTRANSACTION
